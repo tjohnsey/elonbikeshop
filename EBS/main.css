@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+/*--SECTIONS--
+HEADER               line 15
+HERO                 line 25
+TIME                 line 68
+SERVICES             line 105
+CONTACT              line 135
+FOOTER               Line 226
+*/
+
+/**HEADER**/
+.logo{
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+}
+.logo img{
+    height: 100px;
+}
+
+/**HERO**/
+.hero_img img{
+    width: 100%;
+    opacity: 0.9;
+}
+.hero_text h1{
+    font-size: 5rem;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: orangered;
+}
+/*Desktop*/
+@media (min-width: 1025px){
+    .hero{
+        position: relative;
+        width: 100%;
+        background-color: black;
+    }
+.hero_text h1{
+    position: absolute;
+    font-size: 14rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.871);
+}
+}
+/*tablet*/
+@media (min-width:700px){
+.hero_text h1{
+    font-size: 10rem;
+}
+}
+/*Mobile*/
+@media (max-width:699px){
+    .hero_text h1{
+        font-size: 5rem;
+}
+}
+
+/**TIMES**/
+.times{
+    background-image: url('/image/bike\ on\ a\ wall.jpg');
+    background-position: 50%;
+    height: 500px;
+    color: rgba(255, 68, 0, 0.862);
+    
+    font-weight: bold;
+}
+.times ul{
+    padding-top: 50px;
+   padding-left:50px ;
+   padding-right:100px;
+    list-style: none;
+    line-height: 6rem;
+    background-color: rgba(21, 8, 21, 0.166);
+    height: 100%;
+}
+.times li{
+    font-size: 5rem;
+}
+/*Mobile*/
+@media (max-width:699px){
+    .times ul{
+       padding-left:30px ;
+       padding-right:30px;
+       line-height: 4rem;
+    }
+    .times li{
+        font-size: 3rem;
+        background-color: rgba(0, 0, 0, 0.469);
+        text-shadow: 1px 1px rgb(189, 185, 185);
+    }
+}
+
+/**SERVICES**/
+.services_block{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(252, 250, 252);
+    justify-content: space-around;   
+}
+.services_card{
+    overflow: hidden;
+    width: 400px;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: rgba(255, 68, 0, 0.911);
+    margin-top: 2rem;
+}
+.services_card img{
+    height: 300px;
+}
+.services_card h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.services_card p{
+    font-size: 2.5rem;
+    padding: 25px;
+}
+/*Mobile*/
+@media (max-width:699px){
+.services_card{
+        width: 350px;}
+}
+
+/**CONTACT**/
+.contact{
+    padding: 5rem 0;
+    background-color: rgb(252, 250, 252);
+    
+}
+.contact h2{
+    font-size: 5rem;
+    text-align: center;
+}
+.contact_form_map_block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+form{
+    padding: 8rem 0 8rem 0;
+}
+input, textarea{
+    width: 50rem;
+    color: black;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+input{
+    height: 5rem;
+}
+textarea{
+    height: 10rem;
+}
+.contact_card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+    padding-top: 2rem;
+}
+.contact_card p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+span{
+    padding-right: 1rem;
+}
+.info img{
+    height: 25px;
+}
+.button{
+    background-color: orangered;
+    margin-top: 2rem;
+}
+.call_button{
+    position: fixed;
+    height: 4.5rem;
+    bottom: 2.7rem;
+    background-color: orangered;
+    text-align: center;
+    width: 100vw;
+    border: 2px solid black;   
+}
+.call_button a{
+    font-size: 3rem;
+    color: black;
+    text-decoration: none;
+}
+/*desktop*/
+.call_button{
+    display: none;
+}
+/*Mobile*/
+@media (max-width:699px){
+    form{
+        padding-top: 2rem;
+        }
+    input, textarea{
+        width:350px
+        }
+    .contact_card p{
+        font-size: 1.5rem;
+        line-height: 5rem;
+        
+        }
+        iframe{
+            width: 372px;
+            height: 300px;
+        }
+        .call_button{
+            display: block;
+        }
+    }
+
+    /*Footer*/
+footer{
+    background-color: black;
+    color: orangered;
+    text-align: center;
+    height: 3rem;
+}
+footer p{
+    font-size: 2rem;
+}
+
