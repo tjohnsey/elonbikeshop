@@ -2,6 +2,8 @@
 Single page website for Elon Bike Shop
 
 ***UPDATES***
+*4/22.22*
+Added GA4 tag and changed H1 background
 *4/21/22*
 Resized the maps iframe to fit properly in mobile design
 Added a "call now" button to the mobile version 
